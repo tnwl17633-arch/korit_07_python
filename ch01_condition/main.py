@@ -65,6 +65,7 @@ else:
 age = float(age)        # 정수를 실수로 형변환
 print(age)      # 결과값 : 21.0
 
+
 '''
 논리 연산자 : 
     1) and : A and B -> A와 B가 모두 참일 때 실행문 실행     &&
