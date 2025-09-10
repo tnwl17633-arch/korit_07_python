@@ -305,14 +305,31 @@
 #
 # # time()
 # print(time.time())
+#
+# import matplotlib.pyplot as plt # 별칭
+#
+# # matplotlib : 데이터 분석 시 시각화할 때 사용
+# # .plot(x, y) : x축 데이터, y축 데이터를 설정하여 꺾은선 그래프를 작성
+#
+# plt.plot([1,2,3,4], ["a","b","c","d"])
+# plt.show() # 그래프 출력
+#
+data = "hello"
+#
+# print(data, type(data))
+# print(data[0]) # idx 번호 0번째 위치에 있는 문자 추출
+# print(data[-5]) # idx 5번째 위치에 있는 문자 추출
 
-import matplotlib.pyplot as plt # 별칭
+# 2) 슬라이싱 : 한 문자이상 구성된 단어나 문자를 추출하고자 할 때 사용. 인덱스 번호 사용
 
-# matplotlib : 데이터 분석 시 시각화할 때 사용
-# .plot(x, y) : x축 데이터, y축 데이터를 설정하여 꺾은선 그래프를 작성
+# print(data[0:2:1]) # idx 0~1까지 문자열 슬라이싱
+# print(data[0:2]) # 간격을 1로 설정하여 슬라이싱 할 때는 생략 가능
+print(data[:2]) # idx 0부터 시작하면 start는 생략 가능
 
-plt.plot([1,2,3,4], ["a","b","c","d"])
-plt.show() # 그래프 출력
+print(data[1:5]) # idx 1~4까지 문자열 슬라이싱
+print(data[1:]) # idx 1~4까지 문자열 슬라이싱
 
-
-
+print(data[::2]) # idx 0~4까지 문자열 슬라이싱
+# 시퀀스 연산자
+print("hi~" + "hello~") # 문자열+문자열 => 문자열 연결
+print("hi" * 3) #문자열 * 정수 => 문자열 반복
